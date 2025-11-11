@@ -63,5 +63,6 @@ void Update()
 ## Output:
 
 <img width="1918" height="1022" alt="image" src="https://github.com/user-attachments/assets/08017b5b-b3e8-468d-aab9-bc727b1757d6" />
+
 ## Result:
-### Thus, a 3D application for RollABall objects in unity is developed successfully.
+A 3D application for RollABall objects in unity is developed successfully.
