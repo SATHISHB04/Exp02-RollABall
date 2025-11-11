@@ -25,9 +25,43 @@
 ### Step8: Create a new script -> Create a folder in project (Name: Scripts) Hierarchy -> Player -> Inspector-> AddComponent-> NewScripts-> PlayerController( Click create and Add), Copy the PlayerController and drag to Script folder, Double click the PlayerController file and type the coding
 
 ## Program:
+```
+// Start is called once before the first execution of Update after the MonoBehaviour is created
+void Start()
+{
+    
+}
 
+// Update is called once per frame
+void Update()
+{
+    float x=0.0f, y=0.0f, z=0.0f;
+    if(Input.GetKey(KeyCode.A))
+    {
+        x=x-xForce;
+    }    
+    if(Input.GetKey(KeyCode.D))
+    {
+        x=x+xForce;
+    }
+    if(Input.GetKey(KeyCode.W))
+    {
+        z=z-zForce;
+    }
+    if(Input.GetKey(KeyCode.S))
+    {
+        z=z+zForce;
+    }
+    if(Input.GetKey(KeyCode.Space))
+    {
+        y=yForce;
+    }
+    GetComponent<Rigidbody>().AddForce(x,y,z);
+}
+```
 
 ## Output:
 
+<img width="1918" height="1022" alt="image" src="https://github.com/user-attachments/assets/08017b5b-b3e8-468d-aab9-bc727b1757d6" />
 ## Result:
 ### Thus, a 3D application for RollABall objects in unity is developed successfully.
